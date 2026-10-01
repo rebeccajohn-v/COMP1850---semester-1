@@ -15,11 +15,11 @@ You can complete this task on the worksheet pdf if you prefer.
 |     cd directory_name       | |
 |     cd ..                   | |
 |     cd -                    | |
-|     mkdir directory_name    | |
-|     touch filename          | |
-|     git status              | |
+|     mkdir directory_name    | makes directory called directory_name |
+|     touch filename          | creates a file called filename |
+|     git status              |  |
 |     git add -A              | |
 |     git commit -m ""        | |
-|     git push                | |
+|     git push                | pushes the changes made to  |
 |     git pull                | |
 
