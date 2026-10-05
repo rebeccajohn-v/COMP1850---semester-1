@@ -8,18 +8,19 @@ You should put your explanations between the \| \| characters.
 
 You can complete this task on the worksheet pdf if you prefer.
 
-|     Command                 |     Explanation    |
-|-----------------------------|--------------------|
-|     pwd                     | shows the current location of the terminal |
-|     ls                      | |
-|     cd directory_name       | |
-|     cd ..                   | |
-|     cd -                    | |
-|     mkdir directory_name    | makes directory called directory_name |
-|     touch filename          | creates a file called filename |
-|     git status              |  |
-|     git add -A              | |
-|     git commit -m ""        | |
-|     git push                | pushes the changes made to  |
-|     git pull                | |
+|     Command                 |     Explanation                                      |
+|-----------------------------|------------------------------------------------------|
+|     pwd                     | shows the current location of the terminal           |
+|     ls                      | lists all directories and files in current directory |
+|     cd directory_name       | moves into directory called directory_name           |
+|     cd ..                   | moves up a directory                                 |
+|     cd -                    | moves to root directory                              |
+|     mkdir directory_name    | makes directory called directory_name                |
+|     touch filename          | creates a file called filename                       |
+|     git status              | shows status of current directory                    |
+|     git add -A              | stages the changes made                              |
+|     git commit -m ""        | bundles the changes made and creates a save point    |
+|                             | -m adds a commit message                             |
+|     git push                | pushes the changes made to a remote server           |
+|     git pull                | fetches code from the remote server                  |
 

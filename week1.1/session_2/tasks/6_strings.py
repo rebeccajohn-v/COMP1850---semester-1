@@ -13,7 +13,7 @@ print(f"Modified String 6: {user_string[::-1]}")                    #prints in r
 print(f"Modified String 7: {user_string.title()}")                  #makes first letter of each word uppercase
 print(f"Modified String 8: {len(user_string)}")                     #prints length of string
 print(f"Modified String 9: {user_string.find('a')}")                #finds index of 'a'
-print(f"Modified String 11: {user_string.startswith('Hello')}")     
+print(f"Modified String 11: {user_string.startswith('Hello')}")     #
 print(f"Modified String 12: {user_string.endswith('!')}")
 print(f"Modified String 13: {user_string.isalnum()}")
 print(f"Modified String 14: {user_string.isalpha()}")

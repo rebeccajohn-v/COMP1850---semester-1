@@ -6,15 +6,24 @@ vegetables = {"leek", "tomato", "potato"}
 # What do you think will be printed here?
 
 both = fruit.intersection(vegetables)
-print(both)
+print(both)             #prints "tomato"
+
 
 # Why does the following code diplay five items?
 
 food = fruit.union(vegetables)
-print(food)
+print(food)             #prints all fruits and vegetables
 
 # Add an item to fruit
 
+fruit.add("banana")
+print(fruit)
+
 # Remove an item from vegetables
 
+vegetables.discard("potato")
+print(vegetables)
+
 # Find and display symmetric difference of the two sets
+
+print(fruit.symmetric_difference(vegetables))
