@@ -2,13 +2,26 @@
 
 L = int(input("Length of sequence: ")) # this should be your only input
 
+sequence = []
+a = 0
 
 # Your code for the Recaman Sequence
+
+for k in range(L):
+    if a - k < 0 and a + k not in sequence:
+        a = a + k
+    elif a - k > 0 and a - k not in sequence:
+        a = a - k
+    sequence.append(a)
+
+
+
 # You should store the sequence in an appropriate data structure named 'sequence'
 
 
 # You may wish to use further output for testing purposes while you develop your code
 
 [print(item) for item in sequence]    # this method is reasonably independent of the choice of data structure
+
 
 # The web page https://en.wikipedia.org/wiki/Recam%C3%A1n%27s_sequence shows about 80 numbers in the sequence
