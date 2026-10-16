@@ -7,11 +7,18 @@ Name: Rebecca John Valliat
 states = { "red":4, "red_amber":3, "green":5, "amber":3 }
 
 systime = 0
-maxtime = int(input())  # read an integer number of steps (>0)
+maxtime = int(input("Enter number of steps: "))  # read an integer number of steps (>0)
 
 state = "red"
 
-print(f"Time {systime:03} State {state}")
+
+for k,v in states.items():
+    print(f"Time {systime:03} State {state}")
+    systime += 1
+    state = k 
+    
+    
+
 
 # Simulate the traffic light system up to time=maxtime in 1-second steps
 
