@@ -8,11 +8,14 @@ a = 0
 # Your code for the Recaman Sequence
 
 for k in range(L):
-    if a - k < 0 and a + k not in sequence:
-        a = a + k
-    elif a - k > 0 and a - k not in sequence:
-        a = a - k
-    sequence.append(a)
+
+    if a - k not in sequence and a - k > 0:
+            a = a - k
+            sequence.append(a)
+
+    else :
+            a = a + k
+            sequence.append(a)
 
 
 
