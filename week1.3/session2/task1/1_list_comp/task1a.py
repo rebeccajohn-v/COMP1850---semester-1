@@ -3,9 +3,16 @@
 animals = ['dog','cat','hamster','goldfish']
 
 not_fish = [item for item in animals if item != 'goldfish']
+<<<<<<< HEAD
 nofish = []
 
+=======
+>>>>>>> refs/remotes/origin/main
 print(not_fish)
+nofish = []
+for i in animals: 
+    if i != "goldfish":
+        nofish.append(i) 
 
 
 

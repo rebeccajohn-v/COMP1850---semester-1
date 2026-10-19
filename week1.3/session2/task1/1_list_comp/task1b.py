@@ -15,6 +15,10 @@ print(newval)
 
 # write the list comprehension equivalent to the `for` loop
 
+<<<<<<< HEAD
 newvals =[2*i if i % 2 == 0 else i for i in values]        
 
 print(newvals)
+=======
+newvals = [2*i if i%2 == 0 else i for i in values]
+>>>>>>> refs/remotes/origin/main

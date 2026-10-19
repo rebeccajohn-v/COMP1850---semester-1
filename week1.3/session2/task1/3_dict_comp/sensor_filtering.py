@@ -5,7 +5,14 @@ home_sensors = {"Living Room Thermostat": 85, "Front Door Lock": 15, "Kitchen Sm
 # dictionary comprehension to filter all sensors with battery level less than 20
 # Expected Output: {'Front Door Lock': 15, 'Basement Flood Sensor': 8}
 
+<<<<<<< HEAD
 filtered = {k:v for k,v in home_sensors.items() if v < 20}
 # print the new dictionary with battery less than 20 to verify
 
 print(filtered)
+=======
+battery = {k,v for k,v in home_sensors.items() if v >= 20} 
+# print the new dictionary with battery less than 20 to verify
+
+print(battery)
+>>>>>>> refs/remotes/origin/main
