@@ -33,9 +33,18 @@ def calculate_grade(marks):
               range (greater than 100 or negative)
     """
    
-    pass
-
-    return grade
+  if marks >= 80:
+        grade = 'A'
+  elif marks < 80 and marks >= 70:
+        grade = 'B'
+  elif marks < 70 and marks >= 60:
+        grade = 'C'
+  elif marks < 60 and marks >= 50:
+        grade = 'D'
+  elif marks < 50:
+        grade = 'F'
+  
+  return grade
 
 
 # Check if the following tests produce the correct output
