@@ -11,6 +11,9 @@ class Person:
     # birth fields (see README.md for further details)
     
     def __init__(self, name, birth):
+        '''
+        Creates an instance of a person with the given name and date of birth.
+        '''
 
         if not isinstance(name,str):
             raise TypeError("Nmae must be a string")
