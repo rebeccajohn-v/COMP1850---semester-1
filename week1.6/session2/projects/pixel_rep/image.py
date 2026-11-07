@@ -96,9 +96,12 @@ class Image:
         self.max_value = int(line)
 
     def _parse_pixels(self, imgfile):
-        self.pixels = [int(value) for value in imgfile.read().split()]
+        rows = [imgfile.read().split()]
+        self.pixels = [[row] for row in rows]
+         
+        pixel_count = len(self.pixels) * len(self.pixels[0])
 
-        if len(self.pixels) != self.width * self.height:
+        if pixel_count != self.width * self.height:
             raise ImageError("number of pixels doesn't match image dimensions")
 
         if any(p < 0 or p > self.max_value for p in self.pixels):
@@ -109,15 +112,13 @@ class Image:
         """
         Returns pixel value at the specified row & column coordinates.
         """
-        index = row * self.width + col
-        return self.pixels[index]
+        return self.pixels[row][col]
 
     def set(self, row, col, value):
         """
         Sets pixel at the specified row & column coordinates to the given value.
         """
-        index = row * self.width + col
-        self.pixels[index] = value
+        self.pixels[row][col] = value
 
     def copy(self):
         """
@@ -139,8 +140,7 @@ class Image:
         print(self.max_value, file=imgfile)
 
     def _write_pixels(self, imgfile):
-        for row in range(self.height):
-            start = row * self.width
-            for value in self.pixels[start:start + self.width]:
-                print(f"{value:4d}", end="", file=imgfile)
+            for row in self.pixels:
+                for column in row:
+                    print(f"{self.pixels[row][column]:4d}", end="", file=imgfile)
             print(file=imgfile)
